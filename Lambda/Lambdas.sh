@@ -5,42 +5,27 @@
 # Lambdas
 
 lambdas=(
-    sd_calendartournamentsactive-test
-    sd_calendarmatchbyyear-test
-    sd_calendarnormalize-test
-    sd_calendartournamentsbymonth-test
-    sd_calendarstorage-test
-    sd_calendargetcalendarbymonth-test
+    # Lambdas List
 )
 
 # Roles
 
 roles=(
-    SportData-CalendarTournamentsActive-Role
-    SportData-CalendarMatchByYear-Role			
-    SportData-CalendarNormalize-Role					
-    SportData-CalendarTournamentsByMonth-Role
-    SportData-CalendarStorage-Role		
-    SportData-CalendarGetCalendarByMonth-Role
+    # Roles List
 )
 
 # Descriptions
 
 descriptions=(
-    "Lambda for obtain active tournaments from Opta"
-    "Lambda to get matches by year"		
-    "Lambda for normalize calendar data"					
-    "Lambda to get calendar data by month"
-    "Lambda to get data from S3 Bucket"		
-    "Lambda to get Api Gateway endpoints"
+    # Descriptions Lists
 )
 
 # Base configurations
 
 RUNTIME="nodejs14.x"
-BUCKET="devops-cloudprojects"
-BUCKET_DIR="Lambda-Placeholder/index.js.zip"
-ACCOUNT_ID="528662748254"
+BUCKET="bucket-name"
+BUCKET_DIR="bucket-path/index.js.zip"
+ACCOUNT_ID="0000000000"
 
 # AWS CLI 2 Lambda Create Function
 

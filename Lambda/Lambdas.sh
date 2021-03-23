@@ -38,7 +38,7 @@ for lambda_services in ${!lambdas[@]}; do
     --role arn:aws:iam::${ACCOUNT_ID}:role/${roles[$lambda_services]} \
     --description "${descriptions[$lambda_services]}" \
     --tags Area=DevOps,Branch=TUDN,CodeName='Third Party',Environment=All,Project=Sport-Data,Service=Calendar \
-    --output yaml >> Lambdas.txt
+    --output yaml >> Lambdas.yml
 done
 
 # Echo test:

@@ -1,4 +1,4 @@
-## Kolibri Repository Template
+## AWS CLI Scripts
 
 Custom Pull Request Comment / Instruction / Description message section
 

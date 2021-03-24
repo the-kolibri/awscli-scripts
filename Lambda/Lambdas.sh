@@ -37,7 +37,7 @@ for lambda_services in ${!lambdas[@]}; do
     --code S3Bucket=$BUCKET,S3Key=$BUCKET_DIR \
     --role arn:aws:iam::${ACCOUNT_ID}:role/${roles[$lambda_services]} \
     --description "${descriptions[$lambda_services]}" \
-    --tags Area=DevOps,Branch=TUDN,CodeName='Third Party',Environment=All,Project=Sport-Data,Service=Calendar \
+    --tags Author=Kolibri,Project='Kolibri AWS' \
     --output yaml >> Lambdas.yml
 done
 

@@ -1,4 +1,8 @@
 # AWS CLI Scripts Gitignore
 
+# Work templates
+
+.Work-Templates/*
+
 .DS_Store
 

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Services lists
+# Services List
 
 # Lambdas
 
@@ -17,7 +17,7 @@ roles=(
 # Descriptions
 
 descriptions=(
-    # Descriptions Lists
+    # Descriptions List
 )
 
 # Base configurations

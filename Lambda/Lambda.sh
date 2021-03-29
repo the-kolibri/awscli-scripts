@@ -12,7 +12,7 @@ RUNTIME="nodejs14.x"
 BUCKET="bucket-name"
 BUCKET_PATH="bucket-path/index.js.zip"
 ACCOUNT_ID="0000000000"
-OUTPUT_FILE="Lambdas.yml"
+OUTPUT_FILE="./Lambda/Lambdas.yml"
 
 # AWS CLI 2 Lambda Create Function
 
@@ -26,7 +26,7 @@ aws lambda create-function \
 --tags Author=Kolibri,Project='Kolibri AWS' \
 --output yaml >> $OUTPUT_FILE
 
-# Test 
+# Echo Test
 
 # echo ""
 # echo "Variables Test: "

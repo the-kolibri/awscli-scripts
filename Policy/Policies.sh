@@ -14,7 +14,7 @@ descriptions=(
 
 # Base configurations
 
-OUTPUT_FILE="Policies-Short.yml"
+OUTPUT_FILE="./Policy/Policies-Short.yml"
 
 # AWS CLI 2 Policy Create Function
 
@@ -40,7 +40,7 @@ for policy_rules in ${!policies[@]}; do
     --output yaml >> $OUTPUT_FILE
 done
 
-# Echo test:
+# Echo Test
 
 # for policy_rules in ${!policies[@]}; do
 #     echo ${policies[$policy_rules]}

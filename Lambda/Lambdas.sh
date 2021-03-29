@@ -24,7 +24,7 @@ RUNTIME="nodejs14.x"
 BUCKET="bucket-name"
 BUCKET_PATH="bucket-path/index.js.zip"
 ACCOUNT_ID="0000000000"
-OUTPUT_FILE="Lambdas.yml"
+OUTPUT_FILE="./Lambda/Lambdas.yml"
 
 # AWS CLI 2 Lambda Create Function
 
@@ -40,7 +40,7 @@ for lambda_services in ${!lambdas[@]}; do
     --output yaml >> $OUTPUT_FILE
 done
 
-# Test
+# Echo Test
 
 # for lambda_services in ${!lambdas[@]}; do
 #     echo ${lambdas[$lambda_services]}

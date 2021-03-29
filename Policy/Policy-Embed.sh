@@ -7,18 +7,31 @@ DESCRIPTION="My description"
 
 # Base configurations
 
-OUTPUT_FILE="Policies.yml"
+OUTPUT_FILE="./Policy/Policies-Embed.yml"
 
-# Policies
+# AWS CLI 2 Create Policy (Embed Policy)
 
 aws iam create-policy \
 --policy-name $POLICY_NAME \
 --description "$DESCRIPTION" \
 --tags Key=Author,Value=Kolibri Key=Project,Value='Kolibri AWS' \
---policy-document file://Policy.json \
+--policy-document \
+'{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                " : ",
+                " : "
+            ],
+            "Resource": "arn:aws: ... "
+        }
+    ]
+}' \
 --output yaml >> $OUTPUT_FILE
 
-# Test 
+# Echo Test
 
 # echo ""
 # echo "Variables Test: "

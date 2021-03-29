@@ -1,9 +1,15 @@
 #!/usr/bin/env bash
 
+# Single Role creation (Embed Policy)
+
 ROLE_NAME="MyRole"
 DESCRIPTION="My description"
 
-# Roles
+# Base configurations
+
+OUTPUT_FILE="./Role/Roles-Embed.yml"
+
+# AWS CLI 2 Create Role (Embed Policy)
 
 aws iam create-role \
 --role-name $ROLE_NAME \
@@ -22,4 +28,15 @@ aws iam create-role \
 }' \
 --description "$DESCRIPTION" \
 --tags Key=Area,Value=DevOps Key=Project,Value=Test \
---output yaml >> Roles.yml
+--output yaml >> $OUTPUT_FILE
+
+# Echo Test
+
+# echo ""
+# echo "Variables Test: "
+# echo ""
+# echo "Role Name: ${ROLE_NAME}"
+# echo "Role Description: ${DESCRIPTION}"
+# echo ""
+# echo "Output file: ${OUTPUT_FILE}"
+# echo ""

@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 
-# Services List
-
-# Policies
+# Multiple Policies creation
 
 policies=(
     # Policies List
@@ -14,7 +12,11 @@ descriptions=(
     # Descriptions List
 )
 
-AWS CLI 2 Policy Create Function
+# Base configurations
+
+OUTPUT_FILE="Policies-Short.yml"
+
+# AWS CLI 2 Policy Create Function
 
 for policy_rules in ${!policies[@]}; do
     aws iam create-policy \
@@ -35,7 +37,7 @@ for policy_rules in ${!policies[@]}; do
             }
         ]
     }' \
-    --output yaml >> Policies-Short.yml
+    --output yaml >> $OUTPUT_FILE
 done
 
 # Echo test:

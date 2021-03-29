@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 
-# Services List
-
-# Lambdas
+# Multiple Lambda Functions creation
 
 lambdas=(
     # Lambdas List
@@ -24,8 +22,9 @@ descriptions=(
 
 RUNTIME="nodejs14.x"
 BUCKET="bucket-name"
-BUCKET_DIR="bucket-path/index.js.zip"
+BUCKET_PATH="bucket-path/index.js.zip"
 ACCOUNT_ID="0000000000"
+OUTPUT_FILE="Lambdas.yml"
 
 # AWS CLI 2 Lambda Create Function
 
@@ -34,14 +33,14 @@ for lambda_services in ${!lambdas[@]}; do
     --function-name ${lambdas[$lambda_services]} \
     --runtime $RUNTIME \
     --handler index.handler \
-    --code S3Bucket=$BUCKET,S3Key=$BUCKET_DIR \
+    --code S3Bucket=$BUCKET,S3Key=$BUCKET_PATH \
     --role arn:aws:iam::${ACCOUNT_ID}:role/${roles[$lambda_services]} \
     --description "${descriptions[$lambda_services]}" \
     --tags Author=Kolibri,Project='Kolibri AWS' \
-    --output yaml >> Lambdas.yml
+    --output yaml >> $OUTPUT_FILE
 done
 
-# Echo test:
+# Test
 
 # for lambda_services in ${!lambdas[@]}; do
 #     echo ${lambdas[$lambda_services]}

@@ -4,9 +4,6 @@
 
 roles=(
     # Roles List
-    MyRole_One
-    MyRole_Two
-    MyRole_Three
 
 )
 
@@ -14,9 +11,6 @@ roles=(
 
 descriptions=(
     # Descriptions List
-    "MyRole_One Des"
-    "MyRole_Two Des"
-    "MyRole_Three Des"
 )
 
 # Base configurations

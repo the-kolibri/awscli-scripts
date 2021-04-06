@@ -4,12 +4,16 @@
 
 policies=(
     # Policies List
+    policy-test-one
+    policy-test-two
 )
 
 # Descriptions
 
 descriptions=(
     # Descriptions List
+    policy-test-one
+    policy-test-two
 )
 
 # Base configurations
@@ -28,12 +32,12 @@ for policy_rules in ${!policies[@]}; do
         "Version": "2012-10-17",
         "Statement": [
             {
+                "Sid": "VisualEditor0",
                 "Effect": "Allow",
                 "Action": [
-                    " : ",
-                    " : "
+                    "lambda:ListFunctions"
                 ],
-                "Resource": "arn:aws: ... "
+                "Resource": "*"
             }
         ]
     }' \

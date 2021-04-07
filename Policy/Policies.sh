@@ -4,16 +4,12 @@
 
 policies=(
     # Policies List
-    policy-test-one
-    policy-test-two
 )
 
 # Descriptions
 
 descriptions=(
     # Descriptions List
-    policy-test-one
-    policy-test-two
 )
 
 # Base configurations

@@ -1,12 +1,11 @@
-# AWS Scripts
+# Basic AWS Scripts
 
-![Code Name](https://img.shields.io/badge/Code%20Name-v0.0.0-lightgrey)
+![Code Name](https://img.shields.io/badge/Blue%20Cloud-v0.0.0-lightgrey)
 
-## Scripts for services deployment automatization
+<img src="https://kolibri-storage-github.s3.amazonaws.com/covers/readmes/cover-awscli-scripts.png">
 
-### Content
+Basic AWS CLI Scripts for services deployment automatization
 
-#### Lambda script
 ### Codenames
 
 ```plain
@@ -30,4 +29,4 @@ v5.0.0 Red Cloud
 
 <!-- License -->
 
-<p align="center" xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/the-kolibri/kolibri-template">Kolibri Repository Template</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://twitter.com/The_Kolibri">Kolibri</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p>
+<p align="center" xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/the-kolibri/awscli-scripts">Basic AWS CLI Scripts</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://twitter.com/The_Kolibri">Kolibri</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p>
